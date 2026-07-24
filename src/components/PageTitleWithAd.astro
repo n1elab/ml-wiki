@@ -4,6 +4,10 @@ import Ads from './Ads.astro';
 ---
 
 {/* 1. 広告をページの一番上（タイトルの上）に配置 */}
+<div class="top-ad-wrapper">
+  <Ads type="horizontal" />
+</div>
+
 {/* 2. その後にStarlight標準のタイトルを表示 */}
 <Default {...Astro.props}><slot /></Default>
 

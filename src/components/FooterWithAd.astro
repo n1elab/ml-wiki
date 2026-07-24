@@ -4,18 +4,4 @@ import Ads from './Ads.astro';
 ---
 
 <Ads type="square" />
-<!-- PC専用オーバーレイ広告（提供されたadmaxスニペットをそのまま挿入） -->
-<div id="pc-overlay-ad" class="pc-overlay-ad" aria-hidden="false">
-	<div class="pc-overlay-content">
-		<!-- admax -->
-		<script type="text/javascript">(admaxads = window.admaxads || []).push({admax_id: "a500bbe8d540bb357f1e9c91b6aad7fa",type: "action"});</script>
-		<script type="text/javascript" charset="utf-8" src="https://adm.shinobi.jp/st/t.js" async></script>
-		<!-- admax -->
-	</div>
-</div>
-<style>
-	.pc-overlay-ad{ position:fixed; right:24px; bottom:24px; width:320px; max-width:calc(100% - 48px); z-index:9999; box-shadow:0 6px 20px rgba(0,0,0,0.2); border-radius:8px; overflow:hidden; }
-	.pc-overlay-content{ background:white; padding:8px; }
-	@media (max-width:1023px){ .pc-overlay-ad{ display:none !important; } }
-</style>
 <Default {...Astro.props}><slot /></Default>
