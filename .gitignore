@@ -17,3 +17,5 @@ dist/
 .DS_Store
 *.log
 
+# lockなんかいらんやろ各自拾えば良し
+package-lock.json
