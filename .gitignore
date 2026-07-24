@@ -1,21 +1,21 @@
-# 依存ライブラリ
-node_modules/
-
-# ビルド成果物とキャッシュ
+# build output
 dist/
+# generated types
 .astro/
 
-# 機密情報や環境変数
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# environment variables
 .env
-.env.*
-.secret
-.secret.*
-*.pem
-*.key
+.env.production
 
-# エディタのゴミやログ
+# macOS-specific files
 .DS_Store
-*.log
-
-# lockなんかいらんやろ各自拾えば良し
-package-lock.json

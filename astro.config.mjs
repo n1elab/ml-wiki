@@ -6,51 +6,19 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'MiLight Server Wiki',
-
-			favicon: '/favicon.png',
-
-			customCss: [
-				'./src/custom.css',
-			],
-
-			components: {
-        PageTitle: './src/components/PageTitleWithAd.astro',
-        Footer: './src/components/FooterWithAd.astro',
-        Sidebar: './src/components/SidebarWithAd.astro',
-	    },
-
-			social: [{ icon: 'discord', label: 'Discord', href: 'http://discord.gg/UyKV4BDxBR' }],
+			title: 'My Docs',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
-					label: '🛡️ 利用規約',
-					link: '/rules',
-				},
-				{
-					label: '🚪 参加方法',
-					link: '/join',
-				},
-				{
-					label: '✨ 独自機能',
+					label: 'Guides',
 					items: [
-						{ label: '🚀 テレポート機能', link: '/features/tp' },
-						{ label: '🛡️ 土地保護', link: '/features/claims' },
-						{ label: '📦️ チェスト・ドアの保護', link: '/features/cdhogo' },
-						{ label: '⛏️ 一括破壊', link: '/features/veinminer' },
-						{ label: '🏆 スキル機能', link: '/features/skills' },
-						{ label: '🐾 ペット機能', link: '/features/pet' },
-						{ label: '🛗 エレベーター機能', link: '/features/elevator' },
-						{ label: '🥚 エッグキャッチャー', link: '/features/eggc' },
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Example Guide', slug: 'guides/example' },
 					],
 				},
 				{
-					label: '⛓️ 関連リンク',
-					items: [
-						{ label: '🏠 公式サイト', link: 'http://mlms.n1e.net' },
-						{ label: '📄 公式Wiki', link: 'http://wiki-mlms.n1e.net' },
-						{ label: '🗺️ ウェブマップ', link: 'http://map-mlms.n1e.net' },
-						{ label: '💬 公式Discord', link: 'http://discord.gg/UyKV4BDxBR' },
-					],
+					label: 'Reference',
+					items: [{ autogenerate: { directory: 'reference' } }],
 				},
 			],
 		}),
