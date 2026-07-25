@@ -1,12 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import pagePlugin from "@pelagornis/page";
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
+			plugins: [pagePlugin()],
 			title: 'MiLight Server Wiki💡ミライト鯖 Wiki',
+			credits: false, 
 			social: [
 				{ icon: 'discord', label: 'Discord', href: 'http://discord.gg/UyKV4BDxBR' },
 				{ icon: 'x.com', label: 'X', href: 'https://x.com/ml_ms2' },
