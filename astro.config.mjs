@@ -11,10 +11,6 @@ export default defineConfig({
 
 			title: 'MiLight Server Wiki💡ミライト鯖 Wiki',
 
-			config: {
-				copyright: '© 2026 任意のテキスト. All rights reserved.',
-			},
-
 			social: [
 				{ icon: 'discord', label: 'Discord', href: 'http://discord.gg/UyKV4BDxBR' },
 				{ icon: 'x.com', label: 'X', href: 'https://x.com/ml_ms2' },
