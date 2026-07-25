@@ -5,7 +5,7 @@ template: splash
 hero:
   tagline: このWikiは経済中心のマインクラフトサーバー「MiLight Server」の、<br />遊び方を運営が公式にまとめたWikiです！！
   image:
-    file: ../../assets/server-icon.webp
+    file: src/assets/server-icon.webp
   actions:
     - text: 利用規約を確認する
       link: /rules/
@@ -16,41 +16,6 @@ hero:
       icon: right-arrow
       variant: secondary
 ---
-
-import { Card, CardGrid } from '@astrojs/starlight/components';
-
-## 🎮 独自機能の解説
-
-<CardGrid stagger>
-  <Card title="テレポート機能" icon="rocket">
-    `/tpa` コマンドなどで、プレイヤー同士の移動がスムーズに行えます。
-    [詳細を見る](/features/tp/)
-  </Card>
-  <Card title="土地保護" icon="shield">
-    金のシャベルを使って自分の土地を保護し、荒らしから守ります。
-    [詳細を見る](/features/claims/)
-  </Card>
-  <Card title="チェスト・ドア保護" icon="framer-lock">
-    看板を貼るだけで、チェストやかまど、ドアに自分専用の鍵をかけられます。
-    [詳細を見る](/features/cdhogo/)
-  </Card>
-  <Card title="特殊スキル" icon="star">
-    採掘や戦闘を繰り返すことでレベルアップ！自分だけのステータスを強化しよう。
-    [詳細を見る](/features/skills/)
-  </Card>
-  <Card title="一括破壊機能" icon="pencils">
-    木こりや鉱石掘りもサクサク。作業のストレスを減らして、建築や冒険に集中できます。
-    [詳細を見る](/features/veinminer/)
-  </Card>
-  <Card title="ペット機能" icon="footprints">
-  モブをペットにして一緒に冒険しよう！
-  [詳細を見る](/features/pet/)
-  </Card>
-  <Card title="エッグキャッチャー" icon="starlight">
-    卵を投げつけることでモブを「スポーンエッグ」として捕獲できます！
-    [詳細を見る](/features/eggc/)
-  </Card>
-</CardGrid>
 
 ---
 
