@@ -8,8 +8,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			plugins: [pagePlugin()],
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'MiLight Server Wiki💡ミライト鯖 Wiki',
+			social: [
+				{ icon: 'pencil', label: 'Edit', href: 'https://github.com/n1elab/ml-wiki/' },
+				{ icon: 'discord', label: 'Discord', href: 'http://discord.gg/UyKV4BDxBR' }
+			],
 			sidebar: [
 				{
 					label: 'Guides',
