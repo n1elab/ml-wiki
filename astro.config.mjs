@@ -8,9 +8,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			plugins: [pagePlugin()],
+
 			title: 'MiLight Server Wiki💡ミライト鯖 Wiki',
-			components: {
-				Footer: './src/components/CustomFooter.astro',
+
+			config: {
+				copyright: '© 2026 任意のテキスト. All rights reserved.',
 			},
 
 			social: [
