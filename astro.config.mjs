@@ -10,8 +10,8 @@ export default defineConfig({
 			plugins: [pagePlugin()],
 			title: 'MiLight Server Wiki💡ミライト鯖 Wiki',
 			social: [
-				{ icon: 'pencil', label: 'Edit', href: 'https://github.com/n1elab/ml-wiki/' },
-				{ icon: 'discord', label: 'Discord', href: 'http://discord.gg/UyKV4BDxBR' }
+				{ icon: 'discord', label: 'Discord', href: 'http://discord.gg/UyKV4BDxBR' },
+				{ icon: 'pencil', label: 'Edit', href: 'https://github.com/n1elab/ml-wiki/' }
 			],
 			sidebar: [
 				{

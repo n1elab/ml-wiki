@@ -1,40 +1,63 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: MiLight Server 公式Wikiへようこそ！！
+description: 経済中心のマインクラフトサーバー
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: このWikiは経済中心のマインクラフトサーバー「MiLight Server」の、<br />遊び方を運営が公式にまとめたWikiです！！
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/server-icon.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 利用規約を確認する
+      link: /rules/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+      variant: primary
+    - text: 参加方法を確認する
+      link: /join/
+      icon: right-arrow
+      variant: secondary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 🎮 独自機能の解説
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="テレポート機能" icon="rocket">
+    `/tpa` コマンドなどで、プレイヤー同士の移動がスムーズに行えます。
+    [詳細を見る](/features/tp/)
+  </Card>
+  <Card title="土地保護" icon="shield">
+    金のシャベルを使って自分の土地を保護し、荒らしから守ります。
+    [詳細を見る](/features/claims/)
+  </Card>
+  <Card title="チェスト・ドア保護" icon="framer-lock">
+    看板を貼るだけで、チェストやかまど、ドアに自分専用の鍵をかけられます。
+    [詳細を見る](/features/cdhogo/)
+  </Card>
+  <Card title="特殊スキル" icon="star">
+    採掘や戦闘を繰り返すことでレベルアップ！自分だけのステータスを強化しよう。
+    [詳細を見る](/features/skills/)
+  </Card>
+  <Card title="一括破壊機能" icon="pencils">
+    木こりや鉱石掘りもサクサク。作業のストレスを減らして、建築や冒険に集中できます。
+    [詳細を見る](/features/veinminer/)
+  </Card>
+  <Card title="ペット機能" icon="footprints">
+  モブをペットにして一緒に冒険しよう！
+  [詳細を見る](/features/pet/)
+  </Card>
+  <Card title="エッグキャッチャー" icon="starlight">
+    卵を投げつけることでモブを「スポーンエッグ」として捕獲できます！
+    [詳細を見る](/features/eggc/)
+  </Card>
 </CardGrid>
+
+---
+
+## 🔗 クイックリンク
+* [📜 利用規約・禁止事項](/rules/)
+* [🚪 サーバー参加方法](/join/)
+* [📜 🏠 公式サイト](http://mlms.n1e.net)
+* [📄 公式Wiki](http://wiki-mlms.n1e.net)
+* [🗺️ ウェブマップ](http://map-mlms.n1e.net)
+* [💬 公式Discord](http://discord.gg/UyKV4BDxBR)
