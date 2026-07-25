@@ -19,8 +19,8 @@ export default defineConfig({
 				{
 					label: 'ガイド',
 					items: [
-						{ label: '🛡️ 利用規約', slug: '/rules' },
-						{ label: '🚪 参加方法', slug: '/join' },
+						{ label: '🛡️ 利用規約', slug: 'rules' },
+						{ label: '🚪 参加方法', slug: 'join' },
 					],
 				},
 				{
