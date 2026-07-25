@@ -13,22 +13,18 @@ export default defineConfig({
 				{ icon: 'discord', label: 'Discord', href: 'http://discord.gg/UyKV4BDxBR' },
 				{ icon: 'x.com', label: 'X', href: 'https://x.com/ml_ms2' },
 				{ icon: 'youtube', label: 'youtube', href: 'https://www.youtube.com/channel/UC_p9eD-ZmbDRSJ5HsvDqcoQ?sub_confirmation=1' },
-				{ icon: 'pencil', label: 'Edit', href: 'https://github.com/n1elab/ml-wiki/' }
+				{ icon: 'pen', label: 'Edit', href: 'https://github.com/n1elab/ml-wiki/' }
 			],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'ガイド',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: '🛡️ 利用規約', slug: '/rules' },
+						{ label: '🚪 参加方法', slug: '/join' },
 					],
 				},
 				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
-				},
-				{
-					label: '⛓️ 関連リンク',
+					label: '関連リンク',
 					items: [
 						{ label: '🏠 公式サイト', link: 'http://mlms.n1e.net' },
 						{ label: '📄 公式Wiki', link: 'http://wiki-mlms.n1e.net' },
