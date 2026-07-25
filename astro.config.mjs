@@ -9,13 +9,17 @@ export default defineConfig({
 		starlight({
 			plugins: [pagePlugin()],
 			title: 'MiLight Server Wiki💡ミライト鯖 Wiki',
-			credits: false, 
+			components: {
+				Footer: './src/components/CustomFooter.astro',
+			},
+
 			social: [
 				{ icon: 'discord', label: 'Discord', href: 'http://discord.gg/UyKV4BDxBR' },
 				{ icon: 'x.com', label: 'X', href: 'https://x.com/ml_ms2' },
 				{ icon: 'youtube', label: 'youtube', href: 'https://www.youtube.com/channel/UC_p9eD-ZmbDRSJ5HsvDqcoQ?sub_confirmation=1' },
 				{ icon: 'pen', label: 'Edit', href: 'https://github.com/n1elab/ml-wiki/' }
 			],
+
 			sidebar: [
 				{
 					label: 'ガイド',
@@ -34,6 +38,7 @@ export default defineConfig({
 					],
 				},
 			],
+			
 		}),
 	],
 });

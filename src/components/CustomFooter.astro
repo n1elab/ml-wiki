@@ -1,0 +1,18 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default {...Astro.props} />
+<footer class="custom-copyright">
+  <small>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</small>
+</footer>
+
+<style>
+  .custom-copyright {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--sl-color-gray-5);
+    color: var(--sl-color-gray-3);
+  }
+</style>
